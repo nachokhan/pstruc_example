@@ -10,7 +10,7 @@ class Person:
     def print_person_data(self):
         print(f"This person is called {self.name} and is {self.age} years old.")
         if self.pet:
-            print(f"This person has a pet!: {self.pet.print_pet_info()}")
+            self.pet.print_pet_info()  # Calling print_pet_info of Pet class
 
     def change_age(self, new_age):
         self.age = new_age
