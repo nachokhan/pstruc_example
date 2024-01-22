@@ -8,7 +8,7 @@ The project is split into three versions, each representing a stage of developme
 - `version_2`: Revised code based on ChatGPT's suggestions, improved to adhere to PEP8 guidelines.
 - `version_3`: Further enhancements and feature additions proposed by ChatGPT.
 
-Each version folder contains the project files and a `changes.md` file, detailing the ChatGPT interactions and suggested modifications. The `changes.md` in `version_1` is empty as it's the starting point.
+Each version folder contains the project files and a `readme.md` file, detailing the ChatGPT interactions and suggested modifications. The `readme.md` in `version_1` is empty as it's the starting point.
 
 *Note*: Setting up and running the project is optional and mainly for experimentation with ChatGPT enhancements.
 
@@ -42,11 +42,11 @@ python main.py
 Run the following command to generate the project structure:
 
 ```
-pstruc -ip ".env",".git","*pycache*","*.yml","version_*","changes.md" -fc "*.py" -o pstruc_example -f yaml
+pstruc -ip ".env",".git","*pycache*","*.yml","version_*","readme.md" -fc "*.py" -o pstruc_example -f yaml
 ```
 
 ### Argument Explanation
-- **-ip**: Ignores specified patterns like `.env`, `.git`, `*pycache*`, `*.yml`, `version_*`, and `changes.md`.
+- **-ip**: Ignores specified patterns like `.env`, `.git`, `*pycache*`, `*.yml`, `version_*`, and `readme.md`.
 - **-fc**: Includes the content of Python files (`*.py`).
 - **-o**: Sets the output file's name as `pstruc_example.yaml`.
 - **-f**: Chooses YAML as the output format.
