@@ -9,3 +9,6 @@ if __name__ == "__main__":
 
     mayra = Person("Mayra", 20)
     mayra_pet = Pet("Cuchuflo", 4)
+
+    juancito.print_person_data()
+    mayra.print_person_data()
